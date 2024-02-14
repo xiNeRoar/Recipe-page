@@ -155,7 +155,7 @@ tr:nth-child(3) {
   border-bottom: 1px solid var(--Light-Grey);
 }
 
-@media only screen and (max-width: 450px) {
+@media (max-width: 450px) {
   body {
     padding: 0;
     margin: 0;
