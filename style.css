@@ -168,4 +168,7 @@ tr:nth-child(3) {
   img {
     border-radius: 0;
   }
+  article {
+    padding: 0 2.2em;
+  }
 }
