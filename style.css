@@ -41,7 +41,7 @@ h1 {
 
 body p:first-of-type {
   margin: 0;
-  padding: 1em 0 2em 0;
+  padding: 1em 0 1em 0;
 }
 
 img {
@@ -52,13 +52,14 @@ img {
 .Prep-container {
   background-color: var(--Rose-White);
   border-radius: 1em 1em 0.5em 1em;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
+  margin-top: 1em;
   /* text-align: justify; */
 }
 
 .Prep-container h3 {
   color: var(--Dark-Raspberry);
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0 0.5em;
   margin: 0;
 }
 
@@ -90,36 +91,42 @@ h2 {
   padding: 1em 0 0 0;
 }
 
-.main-container > ul {
+.main-container section > ul {
   margin: 0;
-  padding: 1em 1em 1em 0;
+  padding: 1em 1em 1.5em 1.3em;
+  list-style-type: disc;
 }
 
-.main-container > ol {
+.main-container section > ol {
   margin: 0;
-  padding: 1em 0 1em 1.5em;
+  padding: 1em 0 1.5em 1.5em;
   line-height: 1.5em;
 }
 
-.main-container > ul li {
-  list-style-position: inside;
-  padding: 0.5em;
-}
-
-.main-container > ol li {
+.main-container section > ul li {
   padding: 0.2em;
+  padding-inline-start: 1em;
 }
 
-.main-container > ol li {
+.main-container section > ol li {
+  padding: 0.2em;
+  padding-inline-start: 0.8em;
+}
+
+.main-container section > ol li {
   font-weight: bold;
 }
 
-.main-container > ol span {
+.main-container section > ol span {
   font-weight: normal;
 }
 
 .main-container li::marker {
   color: var(--Nutmeg);
+}
+
+.main-container section ul li::marker {
+  font-size: 12px;
 }
 
 th {
@@ -139,6 +146,7 @@ td {
 table {
   border-spacing: 1em;
   border-collapse: collapse;
+  width: 100%;
 }
 
 tr:nth-child(1),

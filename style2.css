@@ -3,6 +3,11 @@ body {
   color: #605d5b;
 }
 
+section {
+  margin: 0;
+  padding: 0;
+}
+
 .main-frame {
   background-color: white;
   display: block;
